@@ -1,0 +1,177 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    font-family: sans-serif;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header{
+    background: url(imagenes/fondoimg.png);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    flex-flow: column nowrap;
+
+}
+      .menu{
+        background: rgb(0,0,0,0.3);
+        display: flex;
+        flex-flow: row nowrap;
+        height: 60px;
+        align-items:center;
+        text-transform: uppercase;
+        border-bottom: 2px solid white;
+      }
+         .logo{
+           flex: 1 1 auto;
+         }
+            .logo a{
+                color: rgb(0, 0, 0);
+                font-size: 20px;
+            }
+
+            .logo a:hover{
+                color: rgb(184, 37, 37);
+            }
+
+         .nav{
+            flex:1 1 auto;
+        }
+            .nav a{
+                color: rgb(0, 0, 0);
+                font-size: 18px;
+                padding: 0 5px;
+               
+            }
+            .nav a:hover{
+                color: rgb(184, 37, 37);
+            }
+         .social{
+            flex:1 1 auto;
+         }
+            .social a{
+                color: rgb(0, 0, 0);
+                font-size: 18px;
+                padding: 0 5px;
+            }
+            .social a:hover{
+                color: rgb(184, 37, 37);
+            }
+
+    .texto-principal{
+        height: 580px;
+        display: flex;
+        align-items: center;
+
+    }
+         h1{
+            font-size: 21px;
+            color: rgb(3, 3, 3);
+            text-align: center;
+            line-height: 1,6;
+         }
+         
+.section{
+    background: black;
+    display: flex;
+}
+
+    .articulos{
+        background: rgb(237, 235, 238);
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+    }
+        .article{
+            flex: 1 1 40%;
+            color: rgb(51, 51, 51);
+            font-size:13px;
+            letter-spacing: 1px;
+            margin: 10px 10px 0 0px;
+            flex: 1 1 45px; 
+            background: rgb(88, 85, 85, 0.1);
+
+        }
+            .article img{
+                width: 100%;
+            }
+
+            h2{
+                color:black;
+                font-size: 20px;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            
+            p{
+                color:black;
+                font-size: 13px;
+            }
+
+        .navegacion{
+            background: rgb(164, 193, 247);
+            flex: 1 1 100%;
+            color:rgb(15, 15, 15)
+        }
+        
+        .aside{
+        background:rgb(207, 182, 207);
+        flex: 1 1 auto;
+        }
+
+        .publicidad{
+            background:rgb(218, 208, 68);
+        }
+            .publicidad img{
+                width: 100%;
+            }
+
+.footer{
+    background: black;
+    display: flex;
+    justify-content: center;
+
+}
+    .pie{
+        background: rgb(54, 18, 18);
+    }
+        .pie a{
+            color:white;
+        }
+
+@media all and (max-width:800px){
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media all and (max-width:800px){
+    .article{
+        flex-direction: column;
+    }
+@media all and (max-width:400px){
+    .aside{
+        flex-direction: column;
+    }
+}
+}
