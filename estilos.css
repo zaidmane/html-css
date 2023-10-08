@@ -27,7 +27,7 @@ a{
 
 }
       .menu{
-        background: rgb(0,0,0,0.3);
+        background: rgba(248, 232, 6);
         display: flex;
         flex-flow: row nowrap;
         height: 60px;
@@ -35,20 +35,18 @@ a{
         text-transform: uppercase;
         border-bottom: 2px solid white;
       }
-         .logo{
+         .logo img{
            flex: 1 1 auto;
+           width: 250px;
+           height: 60px;
          }
-            .logo a{
-                color: rgb(0, 0, 0);
-                font-size: 20px;
-            }
-
-            .logo a:hover{
-                color: rgb(184, 37, 37);
-            }
 
          .nav{
             flex:1 1 auto;
+            display: flex;
+            justify-content: space-around;
+            justify-content: flex-end;
+
         }
             .nav a{
                 color: rgb(0, 0, 0);
@@ -59,8 +57,12 @@ a{
             .nav a:hover{
                 color: rgb(184, 37, 37);
             }
+            
          .social{
             flex:1 1 auto;
+            display: flex;
+            justify-content: flex-end;
+          
          }
             .social a{
                 color: rgb(0, 0, 0);
@@ -78,6 +80,7 @@ a{
 
     }
          h1{
+            background: rgb(237, 235, 238,0.6);
             font-size: 21px;
             color: rgb(3, 3, 3);
             text-align: center;
@@ -120,24 +123,46 @@ a{
                 color:black;
                 font-size: 13px;
             }
+    .productos{
+        margin:0, auto;
+        justify-content: center;
+        width: 1250px;
+        height: 500px;
+        font-family:sans-serif;
+        display: flex;
+        text-align: center;
+        border-radius: 20px;
+    }
+        .productos a:hover{
+            color: rgb(16, 245, 245);
+        }
 
-        .navegacion{
+        .precio{
+        font-size: 50px;
+        color: red;
+        }
+
+        .columna{
+            background-color: beige;
+            border: 2px solid rgb(36, 35, 35);
+            margin: 20px;
+            padding: 20px;
+        }
+
+    .navegacion{
             background: rgb(164, 193, 247);
             flex: 1 1 100%;
             color:rgb(15, 15, 15)
-        }
+    }
         
-        .aside{
-        background:rgb(207, 182, 207);
+     .aside{
+        background:rgb(214, 41, 214);
         flex: 1 1 auto;
-        }
+        margin: auto;
+        padding: auto;
+        width: 1300px;
 
-        .publicidad{
-            background:rgb(218, 208, 68);
         }
-            .publicidad img{
-                width: 100%;
-            }
 
 .footer{
     background: black;
