@@ -1,118 +1,250 @@
 <!DOCTYPE html>
 <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, use-scalable=no, initial-scale=1.0,maximun-scale=1.0, minimun-scale=1.0">
+        <!--titulo-->
+        <title>JUGUETES</title>
+        <!--Favicon--> 
+        <link rel="icon" type="image/x-icon" href="imagenes/logo.png">
+        <!-- bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <!--css-->
+        <link rel="stylesheet" href="estilos.css">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, use-scalable=no, initial-scale=1.0,maximun-scale=1.0, minimun-scale=1.0">
-    <title>JUGUETES</title>
-    <link rel="stylesheet" href="estilos.css">
+        <!--google fonts-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    </head>
     
-</head>
+        
 <body>
-    <div class="padre">
+    <!--barra de navegacion-->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
 
-        <header class="header">
-            <div class="menu">
-                <div class="logo">
-                    <img src="imagenes/logo.png" alt="LOGO CORPORATIVO">
-                </div>
-                <nav class="nav">
-                    <a href="index.html"><b>INICIO</b></a>
-                    <a href=""><b>NOSOTROS</b></a>
-                    <a href=""><b>SERVICIOS</b></a>
-                    <a href=""><b>CONTACTO</b></a>
-                </nav>
-                <div class="social">
-                    <a href=""><b>X</b></a>
-                    <a href=""><b>INSTAGRAM</b></a>
-                </div>
-            </div>
-            <div class="texto-principal">
-                <h1> <b>Los juguetes son objetos diseñados para el entretenimiento, la diversión y el desarrollo de habilidades en niños y, a veces, también en adultos. Vienen en una amplia variedad de formas, tamaños y tipos, desde muñecas y pelotas hasta rompecabezas, juegos de construcción, vehículos en miniatura, figuras de acción y mucho más. Los juguetes pueden ser educativos, promoviendo el aprendizaje y el desarrollo cognitivo, o simplemente destinados a proporcionar diversión y entretenimiento. Son una parte importante de la infancia y a menudo contribuyen al desarrollo social, emocional y físico de los niños.</b></h1>
-            </div>
-        </header>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-Toggler" aria-controls="navbar-Toggler" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-            <h1><i><b>UN POCO DE HISTORIA</b></i</h1>
+          <div class="collapse navbar-collapse" id="navbar-Toggler">
+            <a class="navbar-brand" href="#"><img src="imagenes/logo.png" width="300" alt="logo"></a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"> <i class="bi bi-book"></i>Historia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-pen-fill"></i>Aprende</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-taxi-front"></i>Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-chat-dots"></i>Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-        <section class="section">
-            <div class="articulos">
-               <article class="article">
-                    <img src="imagenes/imagen1.jpg" alt="caballo de madera">
-                    <h2>juguetes de la prehistoria</h2>
+      <!--seccion principal-->
+
+    <section class="hero align-items-stretch">
+        
+        <div class="hero-principal">
+            <img  class="hero-imagen-juguetes rounded-circle" src="imagenes/fondoimg.png" alt="foto">
+            <h1><b>Hola, Somos tu tienda de juguetes ToysRus</b></h1>
+            <h2> Historia, Venta y Promociones de Juguetes.</h2>
+        </div>
+     </section>
+
+     <!--historia-->
+
+     <section class="historia seccion-oscura">
+        <div class="contenedor">
+            <h4>Los juguetes son objetos diseñados para el entretenimiento, la diversión y el desarrollo de habilidades en niños y a veces también en adultos. Vienen en una amplia variedad de formas, tamaños y tipos, desde muñecas y pelotas hasta rompecabezas, juegos de construcción, vehículos en miniatura, figuras de acción y mucho más. Los juguetes pueden ser educativos, promoviendo el aprendizaje y el desarrollo cognitivo, o simplemente destinados a proporcionar diversión y entretenimiento. Son una parte importante de la infancia y a menudo contribuyen al desarrollo social, emocional y físico de los niños.</h4>
+        </div>
+     </section>
+
+     <!--aprende-->
+
+     <section class=" aprende seccion-clara">
+        <div class="container text-center">
+            <div class="row">
+                <!--articulos 1-->
+                <div class=" columna col-12 col-md-4">
+                    <img src="imagenes/imagen1.jpg" alt="imagen1">
                     <p>Los primeros juguetes en la historia de la humanidad fueron objetos simples y rudimentarios que las civilizaciones antiguas crearon para entretenerse y aprender. Estos juguetes primitivos se remontan a miles de años atrás y variaban según la cultura y la disponibilidad de materiales.</p>
-                </article>
+                    <div class="badge-contenedor">
+                      <h6><span class="badge bg-secondary">Edad media 476 d.c. - 1492</span></h6>
+                    </div>
 
-                <article class="article">
-                    <img src="imagenes/imajen 2.jpg" alt="juguetes de madera">
-                    <h2>Juguetes de madera</h2>
-                    <p>Los juguetes de madera tienen una rica historia que se extiende a través de muchas culturas y épocas. Han evolucionado desde simples figuras talladas hasta juguetes de construcción y rompecabezas elaborados, y continúan siendo apreciados por su durabilidad y su capacidad para estimular la creatividad y el juego imaginativo en los niños.</p>
-                </article>
 
-                <article class="article">
-                    <img src="imagenes/imajen 3.jpg" alt="pollito de cuerda">
-                    <h2>Juguetes de cuerda</h2>
-                    <p>Los juguetes de cuerda han sido una parte importante de la historia de los juguetes, ofreciendo diversión y entretenimiento a través de mecanismos mecánicos simples que utilizan una cuerda enrollada o un resorte para generar movimiento. Desde trompos hasta automóviles y personajes animados, estos juguetes han dejado una huella duradera en la historia del juego infantil.</p>
-                </article>
-
-                <article class="article">
-                    <img src="imagenes/imajen 4.png" alt="cubo rubik">
-                    <h2>Cubo Rubik</h2>
-                    <p>Es un rompecabezas tridimensional inventado por el arquitecto y profesor húngaro Ernő Rubik en 1974. Se convirtió en uno de los rompecabezas más populares y desafiantes del mundo y ha mantenido su popularidad desde su invención.El Cubo de Rubik ha sido un ícono de la cultura pop y un símbolo de la resolución de problemas y la perseverancia. Ha inspirado a muchas personas a explorar el mundo de los rompecabezas y la matemática, y sigue siendo un pasatiempo apreciado en todo el mundo.</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="productos">
-            <div class="columna">
-                <img src="imagenes/pelotas.png" alt="" width="150px" height="150px">
-                <hr>
-                <h2> VARIEDAD DE PELOTAS</h2>
-                <p class="precio">10.000 $</p>
-                <p>cada paquete trae 24 und</p>
-                <hr>
-                <a href="" class="button">COMPRAR AQUI</a>
-                <hr>
-                <h5>si comrpas con este cupon obtienes en descuento del 15% sobre el precio del producto</h5>
-            </div>
-           
-            <div class="columna">
-                 <img src="imagenes/Hot_Wheels_Autos.jpg" alt="" width="150px" height="150px">
-                <hr>
-                <h2>AUTOS HOT WHEELS</h2>
-                <p class="precio">10.000 $</p>
-                <p>cada paquete trae 24 und</p>
-                <hr>
-                <a href="" class="button">COMPRAR AQUI</a>
-                <hr>
-                <h5>si comrpas con este cupon obtienes en descuento del 15% sobre el precio del producto</h5>
-            </div>
-            
-            <div class="columna">
-                <img src="imagenes/muñecos de mario.png" alt="" width="150px" height="150px">
-                <hr>
-                <h2>MUÑECOS DE MARIO</h2>
-                <p class="precio">10.000 $</p>
-                <p>cada paquete trae 24 und</p>
-                <hr>
-                <a href="" class="button">COMPRAR AQUI</a>
-                <hr>
-                <h5>si comrpas con este cupon obtienes en descuento del 15% sobre el precio del producto</h5>
-            </div>
-
-        </section>
-
-            <aside class="aside">
-                <div class="publicidad">
-                    <img src="imagenes/juguetes-oferta.jpg" alt="oferta de juguetes">
                 </div>
-            </aside>
+                 <!--articulos 2-->
+                 <div class=" columna col-12 col-md-4">
+                      <img src="imagenes/imajen 2.jpg" alt="imagen2">
+                      <p>
+                        Los juguetes de madera tienen una rica historia que se extiende a través de muchas culturas y épocas. Han evolucionado desde simples figuras talladas hasta juguetes de construcción y rompecabezas elaborados, y continúan siendo apreciados por su durabilidad y su capacidad para estimular la creatividad y el juego imaginativo en los niños.</p>
+                        <div class="badge-contenedor">
+                          <h6><span class="badge bg-secondary">Siglo XVIII 1700 d.c. - 1800</span></h6>
+                        </div>
+                 </div> 
+                <!--articulos 3-->
+                <div class="columna col-12 col-md-4">
+                    <img src="imagenes/imajen 3.jpg" alt="imagen3">
+                    <p>Los juguetes de cuerda han sido una parte importante de la historia de los juguetes, ofreciendo diversión y entretenimiento a través de mecanismos mecánicos simples que utilizan una cuerda enrollada o un resorte para generar movimiento. Desde trompos hasta automóviles y personajes animados, estos juguetes han dejado una huella duradera en la historia del juego infantil.</p>
+                    <div class="badge-contenedor">
+                      <h6><span class="badge bg-secondary">Siglo XX 1900 d.c. - actualidad</span></h6>
+                    </div>
+                </div> 
 
+            </div>
+        </div>
 
-        <footer class="footer">
-            <nav class="pie">
-                <a href="">DESARROLLADO POR QUINTO SEMENESTRE DE ING ELECTRONICA</a>
-            </nav>
-        </footer>
-    </div>  
+     </section>
+
+<!--productos-->
+     <section class="productos seccion-clara d-flex flex-clomn">
+      <h2 class=" seccion-titulo texto-negro"> Nuestros Productos</h2>
+      <h3 class="seccion-productos">Estos son algunos de nuestros productos que ofrecemos en nuestra tienda</h3>
+      <!--galeria de productos-->
+      <div class="container text-center productos-contenedor">
+        <div class="row">
+          <!--producto1-->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="productos">
+              <img src="imagenes/producto1.jpg" alt="producto1">
+              <div class="overlay">
+                <p>Transforme</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.amazon.com/-/es/FDJ-Auto-control-remoto-transformando/dp/B09HGML369/ref=sr_1_5?crid=3II798FUY7DQN&keywords=juguetes%2Bpara%2Bni%C3%B1os&qid=1700797975&sprefix=%2Caps%2C323&sr=8-5&th=1" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-amazon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+             <!--producto2-->
+             <div class="col-12 col-md-6 col-lg-4">
+              <div class="productos">
+                <img src="imagenes/producto2.jpg" alt="--producto2--">
+                <div class="overlay">
+                  <p>Auto Transforme</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://www.amazon.com/-/es/AUUGUU-carreras-dinosaurios-flexible-prehist%C3%B3rica/dp/B07DSCT7SR/ref=sr_1_7?crid=3II798FUY7DQN&keywords=juguetes+para+ni%C3%B1os&qid=1700798678&sprefix=%2Caps%2C323&sr=8-7" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-amazon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+               <!--producto3-->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="productos">
+              <img src="imagenes/producto3.jpg" alt="producto3">
+              <div class="overlay">
+                <p>Auto Transforme</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.amazon.com/Camiones-juguete-bomberos-cumplea%C3%B1os-Navidad/dp/B0BD87Y3D1/ref=sr_1_3_sspa?crid=7072ZDP3ZTHQ&keywords=juguetes%2Bpara%2Bni%C3%B1os&qid=1700878050&sprefix=%2Caps%2C960&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-amazon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+             <!--producto4-->
+             <div class="col-12 col-md-6 col-lg-4">
+              <div class="productos">
+                <img src="imagenes/producto4.jpg" alt="producto4">
+                <div class="overlay">
+                  <p>Auto Transforme</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://www.amazon.com/-/es/acrobacias-delanteras-mejoradas-autom%C3%B3vil-cumplea%C3%B1os/dp/B0C8V2Q2B3/ref=sr_1_58?crid=7072ZDP3ZTHQ&keywords=juguetes%2Bpara%2Bni%C3%B1os&qid=1700878136&sprefix=%2Caps%2C960&sr=8-58&th=1" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-amazon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+               <!--producto5-->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="productos">
+              <img src="imagenes/producto5.jpg" alt="producto5">
+              <div class="overlay">
+                <p>Auto Transforme</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.amazon.com/-/es/disparos-adelante-pistolas-objetivo-compatible/dp/B087FCMPWW/ref=sr_1_6?crid=7072ZDP3ZTHQ&keywords=juguetes+para+ni%C3%B1os&qid=1700878253&sprefix=%2Caps%2C960&sr=8-6" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-amazon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+             <!--producto6-->
+             <div class="col-12 col-md-6 col-lg-4">
+              <div class="productos">
+                <img src="imagenes/producto6.jpg" alt="producto1">
+                <div class="overlay">
+                  <p>Auto Transforme</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://www.amazon.com/-/es/Tikduck-Juguete-volador-controlado-interiores/dp/B096LVFBMW/ref=sr_1_47?crid=7072ZDP3ZTHQ&keywords=juguetes%2Bpara%2Bni%C3%B1os&qid=1700878293&sprefix=%2Caps%2C960&sr=8-47&th=1" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-amazon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+               <!--producto7-->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="productos">
+              <img src="imagenes/producto7.jpg" alt="producto7">
+              <div class="overlay">
+                <p>Auto Transforme</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.amazon.com/-/es/QDRAGON-baloncesto-interiores-inflador-separable/dp/B0B4C5RKX5/ref=sr_1_55?crid=7072ZDP3ZTHQ&keywords=juguetes%2Bpara%2Bni%C3%B1os&qid=1700878293&sprefix=%2Caps%2C960&sr=8-55&th=1" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-amazon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+             <!--producto8-->
+             <div class="col-12 col-md-6 col-lg-4">
+              <div class="productos">
+                <img src="imagenes/producto8.jpg" alt="producto8">
+                <div class="overlay">
+                  <p>Auto Transforme</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://www.amazon.com/-/es/EduCuties-programable-inteligente-detecci%C3%B3n-cumplea%C3%B1os/dp/B0B6N5MCQK/ref=sr_1_55?crid=7072ZDP3ZTHQ&keywords=juguetes+para+ni%C3%B1os&qid=1700878388&sprefix=%2Caps%2C960&sr=8-55" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-amazon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+               <!--producto9-->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="productos">
+              <img src="imagenes/producto9.jpg" alt="producto9">
+              <div class="overlay">
+                <p>Auto Transforme</p>
+                <div class="iconos-contenedor">
+                  <a href="https://www.amazon.com/escombros-excavadora-juguete-cin%C3%A9tica-juguetes/dp/B0BRT91PYC/ref=sr_1_11_sspa?crid=7072ZDP3ZTHQ&keywords=juguetes%2Bpara%2Bni%C3%B1os&qid=1700878439&sprefix=%2Caps%2C960&sr=8-11-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-amazon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+       
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
